@@ -1,0 +1,167 @@
+/*
+Theme Name: Le Livre Faire
+Theme URI: https://lelivrefaire.com
+Author: Manuel Schmalstieg
+Author URI: 
+Template: atomic
+Description: Child theme of ATOMIC
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body, button,
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.entry-header .entry-title, .content-left .page-title {
+	font-weight: bold;
+	font-style: italic;
+}
+
+hr,
+.home-section {
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+
+#masthead {
+	background: #fff;
+	border-bottom: 10px solid #00afec;
+}
+
+.mobile-navigation {
+	background: #00afec;
+}
+
+.drawer-menu-explore {
+	background: #038ebf;
+}
+
+.site-title {
+	font-weight: bold;
+	font-style: italic;
+	text-transform: lowercase;
+	font-size: 3em;
+	/*text-shadow: 0.1em 0.1em rgba(0, 174, 236, 0.3), 
+	-0.1em -0.1em rgba(234, 20, 140, 0.3);
+	mix-blend-mode: multiply;
+	background-blend-mode: multiply;*/
+}
+
+.site-description {
+	max-width: 14em;
+	font-style: italic;
+	text-transform: lowercase;
+	font-size: 1em;
+	position: relative;
+	margin-top: 0.2em;
+}
+
+.site-identity {
+	padding: 4% 0 2% 0;
+}
+
+
+@media (max-width: 600px) {
+	.site-identity {
+    padding: 6% 0;
+	}
+	.site-title {
+	    font-size: 24px;
+	}
+	.site-description {
+	    font-size: 12px;
+	}
+}
+
+@media (min-width: 800px) {
+	.site-title {
+	    font-size: 4em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.site-title-wrap {
+    text-align: left;
+	}
+}
+
+/* Black Text */
+.site-title a,
+.site-description,
+.main-navigation a,
+.main-navigation a:hover,
+.main-navigation ul li.current-menu-item a, .main-navigation ul li.current-page-item a {
+	color: #000;
+}
+
+
+.main-navigation a {
+	background: rgba(255, 240, 42, 0.5);
+}
+
+.main-navigation a:hover {
+	background: #fff02a;
+}
+
+@media (min-width: 1000px) {
+
+	.site-header .container {
+	  background-image: 
+	      linear-gradient(#00afec, #00afec), 
+	      linear-gradient(#ea148c, #ea148c), 
+	      linear-gradient(#fff02a, #fff02a), 
+	      linear-gradient(#231f20, #231f20);
+	  background-size: 
+	      20% 10px, 
+	      40% 10px, 
+	      60% 10px, 
+	      100% 10px;
+	  background-repeat: no-repeat;
+	}
+  
+}
+
+
+.site-footer {
+	background: #fff02a;
+}
+
+.site-footer,
+.site-footer a,
+.site-footer .widget-title
+{
+	color: #000;
+}
+
+.site-footer a:hover {
+	background: #00afec;
+}
+
+.footer-widgets + .footer-bottom {
+	border-top-color: #000;
+}
+
+
+/* WooCommerce Fix */ 
+.select2-container .select2-selection--single {
+	height: auto;
+}
+
+
+/* Sub-Menu Fix */
+
+.main-navigation .sub-menu, 
+.main-navigation .children {
+	background-color: #fff;
+	font-size: 15px;
+}
+
+.main-navigation li ul a, 
+.main-navigation li ul li a {
+	border-bottom-color:  rgba(0, 0, 0, 0.15);
+}
