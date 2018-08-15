@@ -35,6 +35,7 @@
 	            'post_type'      => 'jetpack-testimonial',
 	            'paged'          => $paged,
 	            'posts_per_page' => $posts_per_page,
+	            'orderby' => 'rand',
 	        );
 
 	        $testimonial_query = new WP_Query ( $args );
@@ -86,7 +87,7 @@
 		
 		if ( is_front_page() ) {
 		
-			echo '<div class="after-testimonials clear" style="padding-top: 2em;">'; 
+			echo '<div class="after-testimonials clear" style="padding-top: 4em;">'; 
 			echo $testimonials_content;
 			echo '</div>'; 
 			
