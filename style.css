@@ -172,3 +172,11 @@ hr,
 	line-height: 1.5;
 }
 
+/* Produits */
+/* Masquer la catégorie */
+
+.product_meta .posted_in {
+	display: none;
+}
+
+
